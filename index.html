@@ -1,134 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Trang Tôn Portfolio</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Trang Tôn Portfolio</title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">TRANG</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list header-list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Trang Tôn</span><br> Master Student
+                </h1>
+
+                <a href="#contact" class="button">Contact</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/trang-ton/" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Trang-Ton/" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-github'></i></a>
+                <a href="https://www.instagram.com/samsam2509/" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-instagram'></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home__blob-img" x="-70" y="-30" style="width: 600px;"
+                            href="assets/img/TrangTransparent.png" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/TrangProfile.jpg" alt="">
+                </div>
+
                 <div>
-                    <a href="#" class="nav__logo">TRANG</a>
+                    <h2 class="about__subtitle">👋 Hello there! I'm Trang</h2>
+                    <p class="about__text">An economics enthusiast and self-proclaimed data wrangler. My GitHub
+                        repository is like a treasure trove of research papers, where I bring numbers to life and
+                        uncover the secrets of the economic universe (well, at least I try!). </br>So grab a cup of
+                        coffee, dive in, and let's embark on an exciting journey of data-driven discoveries together!
+                        🚀📊</p>
                 </div>
+            </div>
+        </section>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list header-list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Trang Tôn</span><br> Master Student</h1>
-
-                    <a href="#contact" class="button">Contact</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/trang-ton/" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://github.com/Trang-Ton/" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                    <a href="https://www.instagram.com/samsam2509/" target="_blank" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
-                </div>
-
-                <div class="home__img">
-                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <mask id="mask0" mask-type="alpha">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                        </mask>
-                        <g mask="url(#mask0)">
-                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                            <image class="home__blob-img" x="-70" y="-30" style="width: 600px;" href="assets/img/TrangTransparent.png"/>
-                        </g>
-                    </svg>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section " id="about">
-                <h2 class="section-title">About</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/TrangProfile.jpg" alt="">
-                    </div>
-                    
-                    <div>
-                        <h2 class="about__subtitle">👋 Hello there! I'm Trang</h2>
-                        <p class="about__text">An economics enthusiast and self-proclaimed data wrangler. My GitHub repository is like a treasure trove of research papers, where I bring numbers to life and uncover the secrets of the economic universe (well, at least I try!). </br>So grab a cup of coffee, dive in, and let's embark on an exciting journey of data-driven discoveries together! 🚀📊</p>           
-                    </div>                                   
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">          
-                    <div>
-                        <h2 class="skills__subtitle">Profesional Skills</h2>
-                        <ul>
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Profesional Skills</h2>
+                    <!-- <ul>
                             <li>Microsoft Office: Word, Excel, PowerPoint</li>
                             <li>Microsoft Power BI</li>
                             <li>Programming Language: Stata, Python, R</li>
-                        </ul>    
-                        <!-- <p class="skills__text"></p> -->
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">Microsoft Office: Word, Excel, PowerPoint</span>
-                            </div>
-                            <div class="skills__bar skills__html">
+                        </ul>     -->
+                    <!-- <p class="skills__text"></p> -->
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <!-- <i class='bx bxl-html5 skills__icon'></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                viewBox="0 0 48 48">
+                                <path fill="#e65100"
+                                    d="M36.883,7.341C38.726,7.85,40,9.508,40,11.397v25.162c0,1.906-1.301,3.57-3.168,4.065L25.29,43.863 L29,36V11l-3.148-6.885L36.883,7.341z">
+                                </path>
+                                <path fill="#b71c1c"
+                                    d="M29,35v3.927c0,3.803-3.824,6.249-7.019,4.491l-6.936-4.445c-0.802-0.466-1.236-1.462-0.964-2.457 C14.334,35.59,15.202,35,16.115,35L29,35z">
+                                </path>
+                                <path fill="#b71c1c"
+                                    d="M15.456,32.228l-3.4,1.502C10.694,34.532,9,33.518,9,31.901V14.904c0-1.536,0.811-2.95,2.116-3.691 l11.83-6.687C25.669,2.983,29,5.014,29,8.218v3.09l-10.037,3.486C17.78,15.263,17,16.436,17,17.743v11.742 C17,30.618,16.41,31.665,15.456,32.228z">
+                                </path>
+                            </svg>
+                            <span class="skills__name">Microsoft Office: Word, Excel, PowerPoint</span>
+                        </div>
+                        <div class="">
 
-                            </div>
-                            <div>
-                                <span class="skills__percentage"></span>
-                            </div>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">Microsoft Power BI</span>
-                            </div>
-                            <div class="skills__bar skills__css">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage"></span>
-                            </div>
+                        <div>
+                            <span class="skills__percentage"></span>
                         </div>
-                        <div class="skills__data">
-                            <div class="skills__names">
-                                <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">Programming Language: Stata, Python, R</span>
-                            </div>
-                            <div class="skills__bar skills__js">
-                                
-                            </div>
-                            <div>
-                                <span class="skills__percentage"></span>
-                            </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <!-- <i class='bx bxl-css3 skills__icon'></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                viewBox="0 0 48 48">
+                                <path fill="#ffc107"
+                                    d="M40,41H8c-2.206,0-4-1.794-4-4V11c0-2.206,1.794-4,4-4h32c2.206,0,4,1.794,4,4v26	C44,39.206,42.206,41,40,41z">
+                                </path>
+                                <path fill="#212121"
+                                    d="M34,12.98H14.02c-2.2,0-4,1.79-4,4V30c0,1.86,1.27,3.42,2.98,3.86v-2.14	c-0.59-0.35-0.98-0.99-0.98-1.72V16.98c0-1.1,0.9-2,2-2H34c1.1,0,2,0.9,2,2V30c0,0.74-0.4,1.38-1,1.73v2.14c1.73-0.44,3-2.01,3-3.87	V16.98C38,14.77,36.21,12.98,34,12.98z">
+                                </path>
+                                <path fill="#212121"
+                                    d="M16.5,28L16.5,28c0.828,0,1.5,0.672,1.5,1.5v5c0,0.828-0.672,1.5-1.5,1.5l0,0	c-0.828,0-1.5-0.672-1.5-1.5v-5C15,28.672,15.672,28,16.5,28z">
+                                </path>
+                                <path fill="#212121"
+                                    d="M21.5,22L21.5,22c0.828,0,1.5,0.672,1.5,1.5v11c0,0.828-0.672,1.5-1.5,1.5l0,0	c-0.828,0-1.5-0.672-1.5-1.5v-11C20,22.672,20.672,22,21.5,22z">
+                                </path>
+                                <path fill="#212121"
+                                    d="M26.5,25L26.5,25c0.828,0,1.5,0.672,1.5,1.5v8c0,0.828-0.672,1.5-1.5,1.5l0,0	c-0.828,0-1.5-0.672-1.5-1.5v-8C25,25.672,25.672,25,26.5,25z">
+                                </path>
+                                <path fill="#212121"
+                                    d="M31.5,18L31.5,18c0.828,0,1.5,0.672,1.5,1.5v15c0,0.828-0.672,1.5-1.5,1.5l0,0	c-0.828,0-1.5-0.672-1.5-1.5v-15C30,18.672,30.672,18,31.5,18z">
+                                </path>
+                            </svg>
+                            <span class="skills__name">Microsoft Power BI</span>
                         </div>
-                        <!-- <div class="skills__data">
+                        <div class="">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage"></span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <!-- <i class='bx bxl-javascript skills__icon' ></i> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48"
+                                viewBox="0 0 48 48">
+                                <path fill="#0277BD"
+                                    d="M24.047,5c-1.555,0.005-2.633,0.142-3.936,0.367c-3.848,0.67-4.549,2.077-4.549,4.67V14h9v2H15.22h-4.35c-2.636,0-4.943,1.242-5.674,4.219c-0.826,3.417-0.863,5.557,0,9.125C5.851,32.005,7.294,34,9.931,34h3.632v-5.104c0-2.966,2.686-5.896,5.764-5.896h7.236c2.523,0,5-1.862,5-4.377v-8.586c0-2.439-1.759-4.263-4.218-4.672C27.406,5.359,25.589,4.994,24.047,5z M19.063,9c0.821,0,1.5,0.677,1.5,1.502c0,0.833-0.679,1.498-1.5,1.498c-0.837,0-1.5-0.664-1.5-1.498C17.563,9.68,18.226,9,19.063,9z">
+                                </path>
+                                <path fill="#FFC107"
+                                    d="M23.078,43c1.555-0.005,2.633-0.142,3.936-0.367c3.848-0.67,4.549-2.077,4.549-4.67V34h-9v-2h9.343h4.35c2.636,0,4.943-1.242,5.674-4.219c0.826-3.417,0.863-5.557,0-9.125C41.274,15.995,39.831,14,37.194,14h-3.632v5.104c0,2.966-2.686,5.896-5.764,5.896h-7.236c-2.523,0-5,1.862-5,4.377v8.586c0,2.439,1.759,4.263,4.218,4.672C19.719,42.641,21.536,43.006,23.078,43z M28.063,39c-0.821,0-1.5-0.677-1.5-1.502c0-0.833,0.679-1.498,1.5-1.498c0.837,0,1.5,0.664,1.5,1.498C29.563,38.32,28.899,39,28.063,39z">
+                                </path>
+                            </svg>
+                            <span class="skills__name">Programming Language: Stata, Python, R</span>
+                        </div>
+                        <div class="">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage"></span>
+                        </div>
+                    </div>
+                    <!-- <div class="skills__data">
                             <div class="skills__names">
                                 <i class='bx bxs-paint skills__icon'></i>
                                 <span class="skills__name">UX/UI</span>
@@ -140,71 +196,91 @@
                                 <span class="skills__percentage"></span>
                             </div>
                         </div> -->
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
-                    </div>
                 </div>
-            </section>
 
-            <!--===== WORK =====-->
-            <section class="work section" id="work">
-                <h2 class="section-title">Projects</h2>
-
-                <div class="work__container bd-grid">
-                    <a href="" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work4.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work5.jpg" alt="">
-                    </a>
-                    <a href="" class="work__img">
-                        <img src="assets/img/work6.jpg" alt="">
-                    </a>
+                <div>
+                    <img src="assets/img/work3.jpg" alt="" class="skills__img">
                 </div>
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Enviar" class="contact__button button">
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer">
-            <p class="footer__title">Marlon</p>
-            <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="project-template bd-grid">
+                <div class="project-content financial">
+                    <h3>Financial Research</h3>
+                    <div>
+                        <ul>
+                            <li><a class="project-link" href="https://github.com/Trang-Ton/ElonMuskTweets_cryptocurrencies" target="_blank" >The impact of @elonmusk on the prices of cryptocurrencies</a></li>
+                            <li><a class="project-link" href="https://github.com/Trang-Ton/FinancialCrisis_DataAnalysis" target="_blank" >The Impact of the Financial Crisis 2008 on European Firms’ Capital Structures</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="project-content economic">
+                    <h3>Economic Research </h3>
+                    <div>
+                        <ul>
+                            <li><a class="project-link" href="https://github.com/Trang-Ton/VaccinationAttitudes_SocialNorm" target="_blank" >Vaccination Attitudes</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <a href="" class="work__img">
+                    <img src="assets/img/work1.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work2.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work3.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work4.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work5.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work6.jpg" alt="">
+                </a> -->
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <!-- <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="button" value="Enviar" class="contact__button button">
+                </form>
+            </div>
+        </section> -->
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer footer-new" id="contact">
+        <div>
+            <p class="footer-title">CONTACT</p>
+            <p class="footer__copy">Trang Ton</p>
+            <p class="footer__copy">Email: <a href="mailto:trangton0998@gmail.com">trangton0998@gmail.com</a></p>
+        </div>
+        <div class="copyright">
             <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
-        </footer>
+            <p class="footer__copy">&#169; Icons from <a href="icons8.com">Icons8</a></p>
+        </div>
+    </footer>
 
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>

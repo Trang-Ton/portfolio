@@ -358,6 +358,44 @@ img {
   transform: scale(1.1);
 }
 
+.project-template {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+}
+
+.project-content {
+  position: relative;
+}
+
+.project-content:before {
+  content: ' ';
+  position: absolute;
+  opacity: 25%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.financial:before {
+  background-image: url(../img/work1.jpg);
+}
+
+.economic:before {
+
+  background-image: url(../img/work2.jpg);
+}
+
+.project-content > h3 {
+  text-align: center;
+}
+
+.project-link {
+  color: blue;
+  text-decoration: underline;
+}
+
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
@@ -383,7 +421,6 @@ img {
 .footer {
   background-color: var(--second-color);
   color: #fff;
-  text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
 }
@@ -405,6 +442,26 @@ img {
 
 .footer__copy {
   font-size: var(--smaller-font-size);
+}
+
+.footer-new {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-new > * {
+  margin-left: 10em;
+  margin-bottom: 2em;
+}
+.copyright {
+  margin-top: 2.5em;
+}
+.footer-title {
+  padding: 1.5em 0;
+}
+a {
+  cursor: pointer;
+  color: var(--first-color);
 }
 
 /* ===== MEDIA QUERIES=====*/
